@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Amarilla para Ti</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .flower {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Pétalos */
+        .petal {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: #FFD700; /* Color amarillo */
+            border-radius: 50%;
+            top: 40px;
+            left: 40px;
+        }
+
+        /* Posición de los pétalos */
+        .petal:nth-child(1) { transform: rotate(0deg) translate(50px); }
+        .petal:nth-child(2) { transform: rotate(60deg) translate(50px); }
+        .petal:nth-child(3) { transform: rotate(120deg) translate(50px); }
+        .petal:nth-child(4) { transform: rotate(180deg) translate(50px); }
+        .petal:nth-child(5) { transform: rotate(240deg) translate(50px); }
+        .petal:nth-child(6) { transform: rotate(300deg) translate(50px); }
+
+        /* Centro de la flor */
+        .center {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: #FF8C00; /* Color naranja oscuro */
+            border-radius: 50%;
+        }
+
+        /* Texto */
+        .message {
+            position: absolute;
+            top: 180px;
+            text-align: center;
+            font-size: 24px;
+            color: #FF4500;
+        }
+    </style
